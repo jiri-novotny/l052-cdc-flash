@@ -1,0 +1,40 @@
+{
+    "env": {
+        "stCompiler": "${env:STM32CLT_PATH}/GNU-tools-for-STM32/bin/arm-none-eabi-gcc",
+        "sdkIncludes": [
+            "${env:STM32CLT_PATH}/GNU-tools-for-STM32/arm-none-eabi/include"
+        ],
+        "genericDefines": [
+            "USE_HAL_DRIVER",
+            "USE_FULL_LL_DRIVER"
+        ]
+    },
+    "configurations": [
+        {
+            "name": "stm32l0",
+            "includePath": [
+                "${sdkIncludes}",
+                "${workspaceFolder}/lib/cmsis-device-l0/Include",
+                "${workspaceFolder}/lib/stm32l0xx-hal-driver/Inc"
+            ],
+            "defines": [
+                "${genericDefines}",
+                "STM32L052xx"
+            ],
+            "customConfigurationVariables": {
+                "device": "STM32L052K8Ux",
+                "svd-file": "STM32L052",
+                "core": "1"
+            },
+            "compilerPath": "${stCompiler}",
+            "cStandard": "c11",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "${default}",
+            "compileCommands": [
+                "${workspaceFolder}/build/stm32l0/compile_commands.json"
+            ]
+
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,52 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "*.hpp": "cpp",
+        ".clang-format-files": "plaintext",
+        ".clang-format-ignore": "ignore"
+    },
+    "search.exclude": {
+        "build/": true,
+        "lib/cmsis-core/CMSIS/Core/Include/a-profile": true,
+        "lib/cmsis-core/CMSIS/Core/Include/r-profile": true,
+        "lib/cmsis-core/CMSIS/Core/Include/cmsis_armclang*": true,
+        "lib/cmsis-core/CMSIS/Core/Include/cmsis_clang.h": true,
+        "lib/cmsis-core/CMSIS/Core/Include/cmsis_iccarm.h": true,
+        "lib/cmsis-core/CMSIS/Core/Include/core_ca.h": true,
+        "lib/cmsis-core/CMSIS/Core/Include/core_cm0.h": true,
+        "lib/cmsis-core/CMSIS/Core/Include/core_cm{1,2,3,4,5,7,8}*": true,
+        "lib/cmsis-core/CMSIS/Core/Include/core_s{c,tar}*": true,
+        "lib/cmsis-core/CMSIS/Core/Include/tz_context.h": true,
+        "lib/cmsis-core/CMSIS/Core/{Source,Template,Test}": true,
+        "lib/cmsis-core/CMSIS/{Documentation,Driver,RTOS2}": true,
+        "lib/cmsis-device-l0/_htmresc": true,
+        "lib/cmsis-device-l0/Release_Notes.html": true,
+        "lib/cmsis-device-l0/Include/stm32l0{1,2,3,4,6,7,8}*": true,
+        "lib/cmsis-device-l0/Include/stm32l05{1,3}*": true,
+        "lib/cmsis-device-l0/Source/Templates/arm": true,
+        "lib/cmsis-device-l0/Source/Templates/iar": true,
+        "lib/cmsis-device-l0/Source/Templates/gcc/startup_stm32l0{1,2,3,4,6,7,8}*": true,
+        "lib/cmsis-device-l0/Source/Templates/gcc/startup_stm32l05{1,3}*": true,
+        "lib/stm32l0xx-hal-driver/_htmresc": true,
+        "lib/stm32l0xx-hal-driver/Release_Notes.html": true,
+        "lib/tinyusb/{docs,examples,hw,lib,test,tools}": true,
+        "lib/tinyusb/src/portable/{analog,bridgetek,chipidea,dialog,ehci,mentor,microchip,mindmotion,nordic,nuvoton,nxp,ohci,raspberrypi,renesas,sony,sunxi,synopsys,template,ti,valentyusb,wch}": true,
+        "lib/tinyusb/src/portable/st/typec": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": false,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.readonlyInclude": {
+        "lib/cmsis-core/**": true,
+        "lib/cmsis-device-l0/**": true,
+        "lib/stm32l0xx-hal-driver/**": true
+    },
+    // VSCode
+    "chat.commandCenter.enabled": false,
+    "cortex-debug.variableUseNaturalFormat": false,
+    "extensions.ignoreRecommendations": true
+}
